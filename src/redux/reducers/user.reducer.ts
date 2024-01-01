@@ -1,4 +1,4 @@
-import type { UserActionTypes } from '../actions/actionTypes';
+import type { UserActionTypes } from '../actions/userActions';
 import {
   FETCH_USER_REQUEST,
   FETCH_USER_SUCCESS,
@@ -6,7 +6,7 @@ import {
   LOGOUT_USER,
 } from '../actions/actionTypes';
 
-interface UserState {
+export interface UserState {
   loading: boolean;
   user: any | null;
   error: string | null;
