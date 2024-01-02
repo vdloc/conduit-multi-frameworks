@@ -1,5 +1,5 @@
-import { BaseApi } from './baseApi';
-import type { TagsResponse } from '../types/Tags';
+import { BaseApi } from '@services/baseApi';
+import type { TagsResponse } from '@customTypes/Tags';
 
 export class TagApi extends BaseApi {
   private readonly ENDPOINT = '/tags';

@@ -1,4 +1,4 @@
-import type { Comment } from './Comment';
+import type { Comment } from '@customTypes/Comment';
 export interface MultipleCommentsResponse {
   comments: Comment[];
 }

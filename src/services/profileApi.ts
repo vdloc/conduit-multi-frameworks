@@ -1,5 +1,5 @@
-import { BaseApi } from './baseApi';
-import type { Profile } from '../types/Profile';
+import { BaseApi } from '@services/baseApi';
+import type { Profile } from '@customTypes/Profile';
 
 export class ProfileApi extends BaseApi {
   private readonly ENDPOINT = '/profiles';

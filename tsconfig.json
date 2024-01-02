@@ -22,16 +22,16 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "routes/*": ["src/routes/*"],
-      "services/*": ["src/services/*"],
-      "components/*": ["src/components/*"],
-      "hooks/*": ["src/hooks/*"],
-      "types/*": ["src/types/*"],
-      "assets/*": ["src/assets/*"],
-      "utils/*": ["src/utils/*"],
-      "pages/*": ["src/pages/*"],
-      "redux/*": ["src/redux/*"],
-      "contexts/*": ["src/contexts/*"]
+      "@routes/*": ["src/routes/*"],
+      "@services/*": ["src/services/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@customTypes/*": ["src/types/*"],
+      "@assets/*": ["src/assets/*"],
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["src/pages/*"],
+      "@redux/*": ["src/redux/*"],
+      "@contexts/*": ["src/contexts/*"]
     }
   },
   "include": ["src"],

@@ -1,12 +1,12 @@
-import { BaseApi } from './baseApi';
+import { BaseApi } from '@services/baseApi';
 import type {
   Article,
   ArticleCreateRequest,
   ArticleUpdateRequest,
-} from '../types/Article';
-import type { MultipleArticlesResponse } from '../types/Articles';
-import type { Comment } from '../types/Comment';
-import type { MultipleCommentsResponse } from '../types/Comments';
+} from '@customTypes/Article';
+import type { MultipleArticlesResponse } from '@customTypes/Articles';
+import type { Comment } from '@customTypes/Comment';
+import type { MultipleCommentsResponse } from '@customTypes/Comments';
 import queryString from 'query-string';
 
 interface ListArticlesParams {

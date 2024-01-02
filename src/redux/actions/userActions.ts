@@ -3,7 +3,7 @@ import {
   FETCH_USER_SUCCESS,
   FETCH_USER_FAILURE,
   LOGOUT_USER,
-} from './actionTypes';
+} from '@redux/actions/actionTypes';
 
 export interface FetchUserRequestAction {
   type: typeof FETCH_USER_REQUEST;

@@ -1,8 +1,8 @@
-import { ArticleApi } from './articleApi';
-import { AuthApi } from './authApi';
-import { ProfileApi } from './profileApi';
-import { TagApi } from './tagApi';
-import { UserApi } from './userApi';
+import { ArticleApi } from '@services/articleApi';
+import { AuthApi } from '@services/authApi';
+import { ProfileApi } from '@services/profileApi';
+import { TagApi } from '@services/tagApi';
+import { UserApi } from '@services/userApi';
 
 class API {
   public article: ArticleApi;

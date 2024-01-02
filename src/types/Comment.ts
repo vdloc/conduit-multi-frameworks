@@ -1,4 +1,4 @@
-import type { Author } from './Article';
+import type { Author } from '@customTypes/Article';
 
 export interface Comment {
   id?: number;

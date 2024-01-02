@@ -1,5 +1,5 @@
-import { BaseApi } from './baseApi';
-import type { User } from '@/types/User';
+import { BaseApi } from '@services/baseApi';
+import type { User } from '@customTypes/User';
 
 export class UserApi extends BaseApi {
   async getCurrentUser(): Promise<User> {

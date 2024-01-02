@@ -1,5 +1,5 @@
-import { BaseApi } from './baseApi';
-import type { User, UserLogin, UserRegister } from '../types/User';
+import { BaseApi } from '@services/baseApi';
+import type { User, UserLogin, UserRegister } from '@customTypes/User';
 
 export class AuthApi extends BaseApi {
   private readonly ENDPOINT = '/users';
