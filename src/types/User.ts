@@ -10,8 +10,16 @@ export interface UserResponse {
   user: User;
 }
 
-export interface UserRequest {
+export interface UserLogin {
   user: {
+    email: string;
+    password: string;
+  };
+}
+
+export interface UserRegister {
+  user: {
+    username: string;
     email: string;
     password: string;
   };

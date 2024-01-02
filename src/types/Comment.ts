@@ -1,11 +1,11 @@
 import type { Author } from './Article';
 
 export interface Comment {
-  id: number;
-  createdAt: string;
-  updatedAt: string;
+  id?: number;
+  createdAt?: string;
+  updatedAt?: string;
   body: string;
-  author: Author;
+  author?: Author;
 }
 
 export interface SingleCommentResponse {

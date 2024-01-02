@@ -6,18 +6,20 @@ export interface Author {
 }
 
 export interface Article {
-  slug: string;
+  slug?: string;
   title: string;
   description: string;
   body: string;
-  tagList: string[];
-  createdAt: string;
-  updatedAt: string;
-  favorited: boolean;
-  favoritesCount: number;
-  author: Author;
+  tagList?: string[];
+  createdAt?: string;
+  updatedAt?: string;
+  favorited?: boolean;
+  favoritesCount?: number;
+  author?: Author;
 }
 
-export interface SingleArticleResponse {
+export interface ArticleCreateRequest {
   article: Article;
 }
+
+export interface ArticleUpdateRequest extends Partial<Article> {}

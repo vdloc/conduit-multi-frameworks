@@ -1,32 +1,21 @@
-import axios from 'axios';
-import type { UserRequest } from '../types/User';
-
-const API_BASE_URL = 'https://api.realworld.io/api';
-const apiClient = axios.create({
-  baseURL: API_BASE_URL,
-});
-
-interface Error {
-  errors: {
-    body: string[];
-  };
-}
+import { ArticleApi } from './articleApi';
+import { AuthApi } from './authApi';
+import { ProfileApi } from './profileApi';
+import { TagApi } from './tagApi';
+import { UserApi } from './userApi';
 
 class API {
-  async getCurrentUser() {
-    try {
-      return await apiClient.get(`/user`);
-    } catch (error: Error | any) {
-      return error.body;
-    }
-  }
-
-  async login(user: UserRequest) {
-    try {
-      return await apiClient.post(`/users/login`, user);
-    } catch (error: Error | any) {
-      return error.body;
-    }
+  public article: ArticleApi;
+  public auth: AuthApi;
+  public profile: ProfileApi;
+  public tag: TagApi;
+  public user: UserApi;
+  constructor() {
+    this.article = new ArticleApi();
+    this.auth = new AuthApi();
+    this.profile = new ProfileApi();
+    this.tag = new TagApi();
+    this.user = new UserApi();
   }
 }
 
