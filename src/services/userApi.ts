@@ -1,5 +1,5 @@
 import { BaseApi } from './baseApi';
-import type { User } from '../types/User';
+import type { User } from '@/types/User';
 
 export class UserApi extends BaseApi {
   async getCurrentUser(): Promise<User> {
