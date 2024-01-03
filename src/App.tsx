@@ -1,7 +1,8 @@
 import './App.css';
-import MainLayout from '@components/Layout/MainLayout.component';
+import '@fontsource-variable/inter';
+import Home from '@/pages/Home';
 function App() {
-  return <MainLayout></MainLayout>;
+  return <Home />;
 }
 
 export default App;
