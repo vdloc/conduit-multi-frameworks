@@ -22,4 +22,6 @@ export interface ArticleCreateRequest {
   article: Article;
 }
 
-export interface ArticleUpdateRequest extends Partial<Article> {}
+export interface ArticleUpdateRequest {
+  article: Partial<Article>;
+}

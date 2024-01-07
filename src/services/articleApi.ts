@@ -29,7 +29,7 @@ export class ArticleApi extends BaseApi {
   ): Promise<MultipleArticlesResponse> {
     try {
       const query = queryString.stringify(params);
-      return await this.client.get(`${this.ENDPOINT}${query}`);
+      return await this.client.get(`${this.ENDPOINT}?${query}`);
     } catch (error: Error | any) {
       return this.handleError(error);
     }
@@ -84,7 +84,7 @@ export class ArticleApi extends BaseApi {
   public async addCommentToArticle(
     slug: string,
     comment: Comment
-  ): Promise<void> {
+  ): Promise<Comment> {
     try {
       return await this.client.post(
         `${this.ENDPOINT}/${slug}/comments`,
@@ -108,7 +108,7 @@ export class ArticleApi extends BaseApi {
   public async deleteCommentFromArticle(
     slug: string,
     id: string
-  ): Promise<MultipleCommentsResponse> {
+  ): Promise<void> {
     try {
       return await this.client.delete(
         `${this.ENDPOINT}/${slug}/comments/${id}`
