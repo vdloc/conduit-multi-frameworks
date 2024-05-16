@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import rootReducer from './reducers'; // import your reducers
+import rootReducer from '../reducers'; // import your reducers
 import rootSaga from '../sagas';
 
 // Create the saga middleware

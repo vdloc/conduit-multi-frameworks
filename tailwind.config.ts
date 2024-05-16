@@ -6,6 +6,12 @@ export default {
       colors: {
         theme: '#5CB85C',
       },
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          '2xl': '6rem',
+        },
+      },
     },
   },
   plugins: [],
