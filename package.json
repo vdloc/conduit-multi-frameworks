@@ -9,7 +9,7 @@
     "build:frontend": "yarn workspace frontend build",
     "dev:backend": "yarn workspace backend dev",
     "build:backend": "yarn workspace backend prisma:generate",
-    "start:backend": "npx concurrently \"yarn workspace backend prisma:generate\" \"yarn workspace backend start\"",
+    "start:backend": "yarn install && npx concurrently \"yarn workspace backend prisma:generate\" \"yarn workspace backend start\"",
     "start:dev": "npx concurrently \"yarn start:frontend\" \"yarn start:backend\""
   }
 }
