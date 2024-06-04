@@ -19,5 +19,6 @@ export default defineConfig({
       '@redux': path.resolve(__dirname, './src/redux/'),
       '@contexts': path.resolve(__dirname, './src/contexts/'),
     },
+    preserveSymlinks: true,
   },
 });
