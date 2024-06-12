@@ -5,11 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start:frontend": "yarn workspace frontend dev",
-    "build:frontend": "yarn workspace frontend build",
-    "dev:backend": "yarn workspace backend dev",
-    "build:backend": "yarn workspace backend prisma:generate",
-    "start:backend": "yarn workspace backend start",
-    "start:dev": "npx concurrently \"yarn start:frontend\" \"yarn start:backend\""
+    "start:react": "yarn workspace react dev",
+    "build:react": "yarn workspace react build"
   }
 }
