@@ -1,0 +1,9 @@
+export { default as SectionHeadingWithAction } from "./WithAction";
+export { default as SectionHeadingWithActions } from "./WithActions";
+export { default as SectionHeadingWithActionsAndTabs } from "./WithActionsAndTabs";
+export { default as SectionHeadingWithBadgeAndDropdown } from "./WithBadgeAndDropdown";
+export { default as SectionHeadingWithDescription } from "./WithDescription";
+export { default as SectionHeadingWithInlineTabs } from "./WithInlineTabs";
+export { default as SectionHeadingWithInputGroup } from "./WithInputGroup";
+export { default as SectionHeadingWithLabel } from "./WithLabel";
+export { default as SectionHeadingWithTabs } from "./WithTabs";

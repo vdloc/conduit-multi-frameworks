@@ -1,0 +1,11 @@
+export { default as AvatarGroupStackedBottomToTop } from "./AvatarGroupStackedBottomToTop";
+export { default as AvatarGroupStackedTopToBottom } from "./AvatarGroupStackedTopToBottom";
+export { default as CircularAvatars } from "./CircularAvatars";
+export { default as CircularAvatarsWithBottomNotification } from "./CircularAvatarsWithBottomNotification";
+export { default as CircularAvatarsWithPlaceholderIcon } from "./CircularAvatarsWithPlaceholderIcon";
+export { default as CircularAvatarsWithPlaceholderInitials } from "./CircularAvatarsWithPlaceholderInitials";
+export { default as CircularAvatarsWithTopNotification } from "./CircularAvatarsWithTopNotification";
+export { default as RoundedAvatars } from "./RoundedAvatars";
+export { default as RoundedAvatarsWithBottomNotification } from "./RoundedAvatarsWithBottomNotification";
+export { default as RoundedAvatarsWithTopNotification } from "./RoundedAvatarsWithTopNotification";
+export { default as AvatarWithText } from "./WithText";

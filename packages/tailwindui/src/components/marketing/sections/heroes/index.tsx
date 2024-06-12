@@ -1,0 +1,10 @@
+export { default as HeroSimpleCentered } from './SimpleCentered';
+export { default as HeroSimpleCenteredWithBackgroundImage } from './SimpleCenteredWithBackgroundImage';
+export { default as HeroSplitWithCodeExample } from './SplitWithCodeExample';
+export { default as HeroSplitWithImage } from './SplitWithImage';
+export { default as HeroSplitWithScreenshot } from './SplitWithScreenshot';
+export { default as HeroSplitWithScreenshotOnDark } from './SplitWithScreenshotOnDark';
+export { default as HeroWithAngledImageOnRight } from './WithAngledImageOnRight';
+export { default as HeroWithAppScreenshot } from './WithAppScreenshot';
+export { default as HeroWithAppScreenshotOnDark } from './WithAppScreenshotOnDark';
+export { default as HeroWithPhoneMockup } from './WithPhoneMockup';
