@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start:react": "yarn workspace react dev",
-    "build:react": "yarn workspace react build"
+    "start:react": "yarn workspace conduit-react dev",
+    "build:react": "yarn workspace conduit-react build"
   }
 }
