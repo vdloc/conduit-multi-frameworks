@@ -4,8 +4,11 @@ import Logo from '@/components/Logo';
 import NavMenu from '@/components/Navbar/Menu';
 import Profile from '@/components/Navbar/Profile';
 import NavMobileMenu from '@/components/Navbar/MobileMenu';
+import useNavMenuItems from '@/hooks/useNavMenuItems';
 
-export default function Example() {
+export default function NavBar() {
+  const items = useNavMenuItems();
+
   return (
     <Disclosure as='nav' className='bg-white'>
       {({ open }) => (
@@ -19,13 +22,13 @@ export default function Example() {
                 <div className='flex flex-shrink-0 items-center'>
                   <Logo />
                 </div>
-                <NavMenu />
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+                <NavMenu items={items} />
                 <Profile />
               </div>
             </div>
-            <NavMobileMenu />
+            <NavMobileMenu items={items} />
           </div>
         </>
       )}
