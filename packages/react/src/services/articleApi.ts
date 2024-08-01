@@ -25,10 +25,10 @@ interface FeedArticlesParams {
 export class ArticleApi extends BaseApi {
   private readonly ENDPOINT = '/articles';
   public async listArticles(
-    params: ListArticlesParams
+    params?: ListArticlesParams
   ): Promise<MultipleArticlesResponse> {
     try {
-      const query = queryString.stringify(params);
+      const query = params ? queryString.stringify(params) : '';
       return await this.client.get(`${this.ENDPOINT}?${query}`);
     } catch (error: Error | any) {
       return this.handleError(error);

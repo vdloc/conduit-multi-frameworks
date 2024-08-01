@@ -3,15 +3,15 @@ import Container from '@/components/Layout/Container';
 import MainLayout from '@/components/Layout/MainLayout';
 import { useEffect, useState } from 'react';
 import api from '@/services/api';
+import { Article } from '@/types/Article';
+import { log } from 'console';
 
 export default function Home() {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState([] as Article[]);
 
   useEffect(() => {
-    api.article.listArticles({}).then((data) => {
-      console.log(data);
-
-      setArticles(data.data.articles);
+    api.article.listArticles().then(({ articles }) => {
+      setArticles(articles);
     });
   }, []);
   return (
