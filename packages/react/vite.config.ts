@@ -21,4 +21,7 @@ export default defineConfig({
     },
     preserveSymlinks: true,
   },
+  optimizeDeps: {
+    exclude: ['@tanstack/react-query'],
+  },
 });

@@ -15,7 +15,7 @@ export interface Article {
   updatedAt?: string;
   favorited?: boolean;
   favoritesCount?: number;
-  author?: Author;
+  author: Author;
 }
 
 export interface ArticleCreateRequest {
