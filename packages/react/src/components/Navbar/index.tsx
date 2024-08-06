@@ -4,7 +4,7 @@ import Logo from '@/components/Logo';
 import NavMenu from '@/components/Navbar/Menu';
 import Profile from '@/components/Navbar/Profile';
 import NavMobileMenu from '@/components/Navbar/MobileMenu';
-import useNavMenuItems from '@/hooks/useNavMenuItems';
+import useNavMenuItems from '@/hooks/layout/useNavMenuItems';
 
 export default function NavBar() {
   const items = useNavMenuItems();

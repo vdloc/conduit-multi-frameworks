@@ -1,9 +1,9 @@
+import ArticleList from '@/components/ArticleList';
+import { Article } from '@customTypes/Article';
+type Props = {
+  articles: Article[];
+};
 
-
-type Props = {};
-
-export default function TabContainer({}: Props) {
-  return <section>
-    
-  </section>;
+export default function TabContainer({ articles }: Props) {
+  return <ArticleList></ArticleList>;
 }
