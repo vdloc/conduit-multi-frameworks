@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className='grid grid-rows-[max-content] min-h-screen'>
+    <div className='grid grid-rows-[max-content] min-h-screen transition-all duration-500'>
       <Header />
       <main className='self-start'>{children}</main>
       <Footer />

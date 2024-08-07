@@ -9,7 +9,7 @@ function Menu({ items }: Props) {
       {items.map(({ name, path }) => (
         <a
           href={path}
-          className='inline-flex items-center border-b-2 hover:border-theme px-1 pt-1 text-md font-medium text-gray-900'
+          className='inline-flex items-center border-b-2 hover:border-indigo-500 px-1 pt-1 text-md font-medium text-gray-900 hover:text-indigo-500'
         >
           {name}
         </a>

@@ -1,8 +1,7 @@
-import ArticleList from '@/components/ArticleList';
+import ArticleList from '@/components/Feature/Article/ArticleList';
 import HeroSection from '@/components/Hero';
 import Container from '@/components/Layout/Container';
 import MainLayout from '@/components/Layout/MainLayout';
-import TabContainer from '@/components/TabContainer';
 import TabList from '@/components/TabList';
 import useGlobalArticles from '@/hooks/articles/useGlobalArticles';
 
