@@ -1,4 +1,5 @@
 import ArticleList from '@/components/Feature/Article/ArticleList';
+import TagPane from '@/components/Feature/Tag/TagPane';
 import HeroSection from '@/components/Hero';
 import Container from '@/components/Layout/Container';
 import MainLayout from '@/components/Layout/MainLayout';
@@ -17,12 +18,14 @@ export default function Home() {
         description='A place to share your knowledge.'
       />
       <Container>
-        <div className='grid grid-flow-col'>
-          <section className='grid-cols-8'>
+        <div className='grid grid-flow-col gap-16 grid-cols-12'>
+          <section className='col-span-8'>
             <TabList tabs={tabs}></TabList>
             <ArticleList articles={data?.articles || []}></ArticleList>
           </section>
-          <section className='grid-cols-4'></section>
+          <section className='col-span-4'>
+            <TagPane />
+          </section>
         </div>
       </Container>
     </MainLayout>

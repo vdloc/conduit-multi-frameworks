@@ -39,7 +39,7 @@ export default function TabList({ tabs }: Props) {
                 href={tab.href}
                 className={classNames(
                   tab.current
-                    ? 'border-theme text-theme'
+                    ? 'border-indigo-500 text-indiborder-indigo-500'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
                   'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm'
                 )}
